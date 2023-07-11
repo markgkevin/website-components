@@ -17,7 +17,11 @@ li {
 a {
   text-decoration: none;
 }
+.menu-icon {
+  position: relative;
+}
 .hor-line {
+  display: block;
   background-color: #f57c51;
   width: 30px;
   height: 4px;
@@ -26,7 +30,18 @@ a {
   cursor: pointer;
 }
 .menu-links {
-  display: none;
+  display: block;
+  /* display: none; */
+  top: 0;
+  position: absolute;
+  background-color: gray;
+  width: 300px;
+  text-align: center;
+  right: 1%;
+  height: 100vh;
+}
+.menu-links li {
+  padding: 1rem;
 }
 .brand-logo a {
   font-size: 1.5rem;
