@@ -73,23 +73,17 @@ a {
   text-align: center;
   right: -100%;
   height: 100vh;
+  transition: 0.5s;
 }
 .menu-links.trigger {
-  display: block;
-  top: 0;
-  position: fixed;
-  background-color: #f6f8e2;
-  width: 300px;
-  text-align: center;
   right: 0%;
-  height: 100vh;
 }
 
-@media (max-width: 300px) {
+/* @media (max-width: 300px) {
   .menu-links {
     width: 200px;
   }
-}
+} */
 .menu-links li {
   margin: 2rem;
   /* padding: 1rem; */
@@ -103,9 +97,15 @@ a {
   .nav-container {
     padding: 0.3rem 2.5rem;
   }
+  .menu-links {
+    width: 50%;
+  }
 }
-@media (max-width: 365px) {
+@media (max-width: 425px) {
   .nav-container {
     padding: 0.3rem 1rem;
+  }
+  .menu-links {
+    width: 100%;
   }
 }
